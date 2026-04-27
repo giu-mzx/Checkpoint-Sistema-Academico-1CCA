@@ -20,5 +20,33 @@ int main()
         printf("6 - Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+
+        case 1:
+            printf("\n--- INSERIR NOTAS ---\n");
+
+            do
+            {
+                printf("Digite a nota 1 (0 a 10): ");
+                scanf("%f", &n1);
+                if (n1 < 0 || n1 > 10)
+                    printf("Nota invalida!\n");
+            } while (n1 < 0 || n1 > 10);
+
+            do
+            {
+                printf("Digite a nota 2 (0 a 10): ");
+                scanf("%f", &n2);
+                if (n2 < 0 || n2 > 10)
+                    printf("Nota invalida!\n");
+            } while (n2 < 0 || n2 > 10);
+
+            notasInseridas = 1;
+            mediaCalculada = 0;
+            break;
+        }
+
     } while (opcao != 6);
 }
