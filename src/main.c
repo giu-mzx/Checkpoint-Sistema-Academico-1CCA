@@ -70,6 +70,25 @@ int main()
                     }
                 }
                 break;
+        
+        case 4:
+                if (!mediaCalculada) {
+                    printf("Nenhum resultado disponivel!\n");
+                } else {
+                    printf("\n--- RESULTADO ---\n");
+                    printf("Nota 1: %.2f\n", n1);
+                    printf("Nota 2: %.2f\n", n2);
+                    printf("Media: %.2f\n", media);
+ 
+                    if (media >= 6) {
+                        printf("Situacao: Aprovado\n");
+                    } else if (media >= 5) {
+                        printf("Situacao: Recuperacao\n");
+                    } else {
+                        printf("Situacao: Reprovado\n");
+                    }
+                }
+                break;
         }
 
     } while (opcao != 6);
