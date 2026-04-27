@@ -46,7 +46,19 @@ int main()
             notasInseridas = 1;
             mediaCalculada = 0;
             break;
+
+        case 2:
+                if (!notasInseridas) {
+                    printf("Insira as notas primeiro!\n");
+                } else {
+                    media = (n1 + n2) / 2;
+                    mediaCalculada = 1;
+                    printf("Media: %.2f\n", media);
+                }
+                break;
         }
 
     } while (opcao != 6);
+
+    return 0;
 }
