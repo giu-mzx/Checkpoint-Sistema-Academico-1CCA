@@ -11,7 +11,7 @@ int main() {
 
     media = (nota1 + nota2) / 2; //Faltava os ()
 
-    if (media = 6) {
+    if (media >= 6) { //Faltava o > 
         printf("Aluno aprovado\n");
     } else {
         printf("Aluno reprovado\n");
