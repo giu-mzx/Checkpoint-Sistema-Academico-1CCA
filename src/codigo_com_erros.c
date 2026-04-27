@@ -9,7 +9,7 @@ int main() {
     printf("Digite a segunda nota: ");
     scanf("%f", &nota2); //Faltava o indentiicador de variavel
 
-    media = nota1 + nota2 / 2;
+    media = (nota1 + nota2) / 2; //Faltava os ()
 
     if (media = 6) {
         printf("Aluno aprovado\n");
