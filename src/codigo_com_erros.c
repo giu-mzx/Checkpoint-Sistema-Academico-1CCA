@@ -7,7 +7,7 @@ int main() {
     scanf("%f", &nota1);
 
     printf("Digite a segunda nota: ");
-    scanf("%f", &nota2); //Faltava o indentiicador de variavel
+    scanf("%f", &nota2); //Faltava o identificador de variável
 
     media = (nota1 + nota2) / 2; //Faltava os ()
 
