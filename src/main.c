@@ -56,6 +56,20 @@ int main()
                     printf("Media: %.2f\n", media);
                 }
                 break;
+        
+        case 3:
+                if (!mediaCalculada) {
+                    printf("Calcule a media primeiro!\n");
+                } else {
+                    if (media >= 6) {
+                        printf("Aluno aprovado\n");
+                    } else if (media >= 5) {
+                        printf("Aluno em recuperacao\n");
+                    } else {
+                        printf("Aluno reprovado\n");
+                    }
+                }
+                break;
         }
 
     } while (opcao != 6);
