@@ -103,8 +103,13 @@ int main() {
  printf("f'(x) = %.0fx + %.0f\n", 2*a, b);
  break;
  }
- }
+ case 6:
+ printf("Encerrando sistema...\n");
+ break;
 
+ default:
+ printf("Opcao invalida!\n");
+ }
  } while(opcao != 6);
 
  return 0;
