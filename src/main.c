@@ -99,8 +99,8 @@ int main() {
 
  printf("Digite o valor de c: ");
  scanf("%f", &c);
-
- 
+ printf("f(x) = %.2fx^2 + %.2fx + %.2f\n", a, b, c);
+ printf("f'(x) = %.0fx + %.0f\n", 2*a, b);
  break;
  }
  }
